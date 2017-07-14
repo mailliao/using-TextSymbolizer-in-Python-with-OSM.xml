@@ -1,5 +1,9 @@
 #coding:utf8
+# mailliao@163.com
+# 2017.7.7
+# 参考 Python Geospatial Development 3rd Edition
 import mapnik
+#在xml里设置标签文字的样式
 mapfile = 'tm/osm.xml'
 MIN_LAT = 4#-35
 MAX_LAT = 55#+35
@@ -33,7 +37,7 @@ symbol.fill = mapnik.Color("#000000")
 symbol.opacity = 0.1
 rule.symbols.append(symbol)
 polygonStyle.rules.append(rule)
-
+# symbol.name = "NAME"报错，说是bug，至今无较好解决方案
 '''
 #label的样式
 labelStyle = mapnik.Style()
